@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Tên của bạn]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                <li><a href="#projects" class="nav-link">Dự án</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop class="hero-video" id="heroVideo">
+                <source src="../clip1.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ video.
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Xin chào, tôi là <span class="highlight">Nguyễn Ân Phát</span></h1>
+            <p class="hero-subtitle">midterm assignment</p>
+            <p class="hero-description">Hãy lắng nghe 1 đoạn nhạc trong lúc bạn xem qua profile của tôi nào</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Các dự án</a>
+                <a href="#contact" class="btn btn-secondary">Contact</a>
+            </div>
+            <button class="sound-toggle" onclick="toggleSound()" title="Bật/tắt âm thanh">
+                <i class="fas fa-volume-mute"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Giới thiệu</h2>
+            <div class="about-gif">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnJwZmVyYmV1MWlzMGlma3Z4Ym55amRmZnIzYmlqMWxod2hza2s3ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12HZukMBlutpoQ/giphy.gif" alt="Animation" style="max-width: 200px; height: auto; display: block; margin: 0 auto 20px;">
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Tôi là một lập trình viên đam mê với 1+ năm kinh nghiệm trong phát triển web. Tôi chuyên về xây dựng các ứng dụng web hiện đại, responsive và thân thiện với người dùng.</p>
+                    <p>Với kiến thức vững chắc về cả frontend và backend, tôi có thể tạo ra những sản phẩm hoàn chỉnh từ ý tưởng đến triển khai.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Dự án hoàn thành</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1+</h3>
+                        <p>Năm kinh nghiệm</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Khách hàng hài lòng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Các kỹ năng</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-item"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span class="skill-item"><i class="fab fa-js-square"></i> JavaScript</span>
+                        <span class="skill-item"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-item"><i class="fab fa-vuejs"></i> Vue.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-item"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-item"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-item"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-item"><i class="fas fa-database"></i> MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-item"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-item"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="skill-item"><i class="fab fa-figma"></i> Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Dự án nổi bật</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/profile2.png" alt="E-commerce App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Profile</h3>
+                        <p>1 trang profile với những thông tin cơ bản</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>Javascript</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                           
+                            <a href="https://github.com/phathayqua/phatprofile" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../menu.png" alt="Task Manager">
+                    </div>
+                    <div class="project-content">
+                        <h3>Menu Profile</h3>
+                        <p>Ứng dụng quản lý công việc và thông tin với giao diện trực quan, cùng với các minigame.</p>
+                        <div class="project-tech">
+                            <span>Javascript</span>
+                            <span>Frontend</span>
+                            <span>PWA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/phathayqua/phatmenu7" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2Q3cHU0b3V4bGk4bzE4ZHZqdjgydzR0aTBxYnF3cGYzNTBibmdhcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4JEGvm7EV3KOsYNAvZ/giphy.gif" alt="Weather App">
+                    </div>
+                    <div class="project-content">
+                        <h3>New project comming soon</h3>
+                        <p>1 dự án đầy triển vọng</p>
+                        <div class="project-tech">
+                            <span>PhP</span>
+                            <span>Backend</span>
+                            <span>DB</span>
+                        </div>
+                        <div class="project-links">
+                            
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Liên hệ</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Hãy kết nối với tôi</h3>
+                    <p>Tôi luôn sẵn sàng cho những dự án thú vị và cơ hội hợp tác mới.</p>
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            nguyenanphanguye@gmail.com
+                        </a>
+                        <a href="https://github.com/yourusername" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Tên của bạn" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Tin nhắn..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Nguyễn Ân Phát. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
